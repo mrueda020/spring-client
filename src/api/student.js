@@ -27,7 +27,8 @@ export const addNewStudent = (student) => {
 
   return fetch(url, params)
     .then((response) => {
-      return response.json();
+      console.log(response);
+      return response.text();
     })
     .then((result) => {
       return result;
